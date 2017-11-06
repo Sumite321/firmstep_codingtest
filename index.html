@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Firmstep Test</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 filters-col">
+				<div class="filters">
+					<form>
+						<div class="filter-criteria">
+							<span>Manufacturer</span>
+							<label><input type="checkbox" name = 'brand' value="apple">Apple</label>
+							<label><input type="checkbox" name = 'brand' value="samsung">Samsung</label>
+							<label><input type="checkbox" name = 'brand' value="htc">HTC</label>
+							<label><input type="checkbox" name = 'brand' value="nokia">Nokia</label>
+							<label><input type="checkbox" name = 'brand' value="zte">ZTE</label>
+							<label><input type="checkbox" name = 'brand' value="sony">Sony</label>
+						</div>
+						<div class="filter-criteria">
+							<span>Screen Size</span>
+							<label><input type="checkbox" name = 'screen' value='16'>16 GB</label>
+							<label><input type="checkbox" name = 'screen' value='32'>32 GB</label>
+						</div>
+						<div class="filter-criteria">
+							<span>OS</span>
+							<label><input type="checkbox" name = 'os' value='android'>Android</label>
+							<label><input type="checkbox" name = 'os' value ='ios'>iOS</label>
+							<label><input type="checkbox" name = 'os' value = 'windows'>Windows</label>
+						</div>
+						<div class="filter-criteria">
+							<span>Camera</span>
+							<label><input type="checkbox" name = 'camera' value = '5'>5 Mpx</label>
+							<label><input type="checkbox" name = 'camera' value = '8'>8 Mpx</label>
+							<label><input type="checkbox" name = 'camera' value = '12'>12 Mpx</label>
+							<label><input type="checkbox" name = 'camera' value = '15'>15 Mpx</label>
+						</div>
+						<button>Clear filters</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-10" id= 'phones'>
+               
+				<ul class="products-list" >
+				</ul>
+                
+                <p style='color:red;text-align:center'></p>
+			</div>
+		</div>
+	</div>
+   
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script1.js"></script>
+    </body>
+</html>
